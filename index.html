@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager | Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="header-top">
+                <h1>TODO<span> LIST</span></h1>
+                <button id="themeToggle" class="glass-btn">
+                    <i data-lucide="moon"></i> <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="input-card">
+                <input type="text" id="taskInput" placeholder="What's your next big goal?">
+                <div class="input-actions">
+                    <select id="categorySelect">
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+                    <button id="addBtn">Add Task</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="stats-bar">
+                <div class="filters">
+                    <button class="filter-btn active" onclick="filterTasks('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterTasks('pending', this)">Pending</button>
+                    <button class="filter-btn" onclick="filterTasks('completed', this)">Completed</button>
+                </div>
+            </div>
+
+            <ul id="taskList"></ul>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
