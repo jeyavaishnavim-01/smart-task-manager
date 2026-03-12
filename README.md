@@ -1,4 +1,4 @@
-# Smart Task Manager #
+# Smart Task Manager # 
 
 A sleek, responsive and modern Task Management application designed for high productivity. Built with a focus on **Glassmorphism** UI and smooth user experience.
 
